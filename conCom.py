@@ -211,7 +211,7 @@ def findNum(componentIndex):
     return len(calComNum[calComNum>8000])
     
 
-img = openImg('example3.png')
+img = openImg('example.png')
 
 grayImg = RGBtoGray(img)
 thresh = ISOdata(grayImg)
@@ -233,8 +233,8 @@ f, axarr = plt.subplots(2,1)
 #plt.imshow(img)
 axarr[0].imshow(grayImg)
 axarr[1].imshow(rgbImg)
-grayImg.save('grayImg.png')
-rgbImg.save('rgbImg.png')
+grayImg.save('grayImg_cell.png')
+rgbImg.save('rgbImg_cell.png')
 
 plt.show()
 
